@@ -16,6 +16,8 @@ get '/banana' do
   'bananasv cdfxcvdfnzvdfhv '
 end 
 
-get '/cat' do
+get '/random_cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
+
